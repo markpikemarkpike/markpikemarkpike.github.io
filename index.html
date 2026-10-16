@@ -1,0 +1,115 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width">
+<title>Pacific Pike</title>
+<meta name="description" content="Welcome to Pacific Pike, a cabin you can rent in Sea Ranch, CA.">
+<meta name="robots" content="max-image-preview:large">
+<link rel="canonical" href="https://www.pacificpike.com/">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Pacific Pike">
+<meta property="og:description" content="Welcome to Pacific Pike, a cabin you can rent in Sea Ranch, CA.">
+<meta property="og:image" content="https://www.pacificpike.com/img/photo-07.jpg">
+<meta property="og:url" content="https://www.pacificpike.com/">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Pacific Pike">
+<meta name="twitter:description" content="Welcome to Pacific Pike, a cabin you can rent in Sea Ranch, CA.">
+<meta name="twitter:image" content="https://www.pacificpike.com/img/photo-07.jpg">
+<link rel="icon" href="img/favicon-light.png" media="(prefers-color-scheme: light)">
+<link rel="icon" href="img/favicon-dark.png" media="(prefers-color-scheme: dark)">
+<link rel="apple-touch-icon" href="img/apple-touch-icon.png">
+<link rel="preload" href="fonts/inter-600.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="fonts/inter-800.woff2" as="font" type="font/woff2" crossorigin>
+<style>
+/* A faithful copy of the Framer site, measured from it on 16 Oct 2026 at its three breakpoints. */
+@font-face{font-family:Inter;font-style:normal;font-weight:600;font-display:swap;src:url(fonts/inter-600.woff2) format("woff2")}
+@font-face{font-family:Inter;font-style:normal;font-weight:800;font-display:swap;src:url(fonts/inter-800.woff2) format("woff2")}
+*{box-sizing:border-box}
+html,body{margin:0;background:#fff;color:#000;color-scheme:light}
+body{font-family:Inter,"Helvetica Neue",Helvetica,Arial,sans-serif;font-weight:600;-webkit-font-smoothing:antialiased}
+a{text-decoration:none;color:#d10000}
+img{display:block}
+.page{display:flex;align-items:flex-start}
+
+/* the rail: stays put while the photographs scroll */
+aside{position:sticky;top:0;z-index:1;flex:none;width:364px;height:100vh;display:flex;flex-direction:column;justify-content:space-between;align-items:flex-start}
+header{width:100%;padding:30px;display:flex;flex-direction:column;align-items:flex-start;gap:15px}
+.logo{width:100px;height:75px;object-fit:cover}
+h1{margin:0;font-size:40px;line-height:48px;letter-spacing:-2.1px;font-weight:600}
+h1 b{font-weight:800}
+.foot{width:100%}
+.book{width:304px;height:56px;margin:0 30px 48px;padding:12px;display:flex;justify-content:center;align-items:center;gap:10px;background:#d10000;color:#fff;font-size:24px;line-height:28.8px;font-weight:800;white-space:nowrap}
+.book img{width:32px;height:32px}
+.wave{width:100%;height:70px;flex:none;background:url(img/wave.svg) 0 0/73px auto repeat}
+
+/* the photographs */
+main{flex:1;min-width:0;display:flex;flex-direction:column;gap:10px}
+.p{width:100%;height:600px;object-fit:cover}
+.p.last{border-radius:0 0 0 20px}
+.end{margin-top:-1px;display:flex;flex-direction:column;align-items:center;gap:40px;overflow:hidden}
+.links{flex:none;min-height:60px;display:flex;justify-content:center;align-items:center;gap:10px;font-size:20px;line-height:24px}
+.links img{width:20px;height:20px;object-fit:cover}
+
+/* five links need about 940px: below that, stack them the way the tablet layout already does */
+@media (max-width:1319px){
+  .end{margin-top:0;padding-top:28px}
+  .links{min-height:0;flex-direction:column}
+}
+@media (max-width:1199px){
+  .p{height:400px}
+}
+@media (max-width:809px){
+  .page{flex-direction:column;align-items:stretch}
+  aside{position:static;width:100%;height:476px}
+  header{flex-direction:row-reverse;justify-content:flex-end}
+  .logo{width:80px;height:60px}
+  h1{width:244px;font-size:36px;line-height:43.2px}
+  .book{margin:0 auto 44px}
+  .p{height:300px}
+  .p.last{border-radius:0}
+  .end{padding-top:27px}
+}
+</style>
+</head>
+<body>
+<div class="page">
+  <aside>
+    <header>
+      <img class="logo" src="img/logo.png" alt="Pacific Pike" width="500" height="500">
+      <h1><b>Pacific Pike </b>is a cabin you can <a href="https://airbnb.com/h/pacificpike" target="_blank" rel="noopener">rent</a> in <a href="https://www.google.com/maps/@38.7661328,-123.8280765,9.88z/data=!4m3!11m2!2sSRkInoQ3Qp-55TDWITNw4w!3e3?entry=ttu&amp;g_ep=EgoyMDI0MTEyNC4xIKXMDSoASAFQAw%3D%3D" target="_blank" rel="noopener">Sea Ranch, CA</a>.</h1>
+    </header>
+    <div class="foot">
+      <a class="book" href="https://airbnb.com/h/pacificpike" target="_blank" rel="noopener">Book now on Airbnb <img src="img/arrow.svg" alt=""></a>
+      <div class="wave"></div>
+    </div>
+  </aside>
+  <main>
+    <img class="p" src="img/photo-01.jpg" alt="">
+    <img class="p" src="img/photo-02.jpg" alt="" loading="lazy">
+    <img class="p" src="img/photo-03.jpg" alt="" loading="lazy">
+    <img class="p" src="img/photo-04.jpg" alt="" loading="lazy">
+    <img class="p" src="img/photo-05.jpg" alt="" loading="lazy">
+    <img class="p" src="img/photo-06.jpg" alt="" loading="lazy">
+    <img class="p" src="img/photo-07.jpg" alt="" loading="lazy">
+    <img class="p" src="img/photo-08.jpg" alt="" loading="lazy">
+    <img class="p" src="img/photo-09.jpg" alt="" loading="lazy">
+    <img class="p last" src="img/photo-10.jpg" alt="" loading="lazy">
+    <div class="end">
+      <nav class="links">
+        <a href="https://www.airbnb.com/rooms/1098745374078208008?source_impression_id=p3_1748138314_P3iO195RHZIEeapv&amp;modal=PHOTO_TOUR_SCROLLABLE" target="_blank" rel="noopener">AirBnb Photos</a>
+        <img src="img/drop.png" alt="">
+        <a href="https://www.instagram.com/pacificpike/" target="_blank" rel="noopener">@PacificPike</a>
+        <img src="img/drop.png" alt="">
+        <a href="https://www.instagram.com/explore/search/keyword/?q=%23searanch" target="_blank" rel="noopener">Sea Ranch Photos</a>
+        <img src="img/drop.png" alt="">
+        <a href="ships/">Passing Ships</a>
+        <img src="img/drop.png" alt="">
+        <a href="sea-ranch-quest/">Sea Ranch Quest</a>
+      </nav>
+      <div class="wave"></div>
+    </div>
+  </main>
+</div>
+</body>
+</html>
